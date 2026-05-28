@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索影片-欧美精选电影</title>
+    <meta name="description" content="搜索欧美精选电影、精选电影合集、热门片库和高清电影推荐内容。">
+    <meta name="keywords" content="欧美精选电影,精选电影合集,欧美影片,热门片库,电影推荐,高清电影">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="nav-wrap">
+        <a class="logo" href="./index.html" aria-label="欧美精选电影">
+            <span class="logo-mark">影</span>
+            <span class="logo-text">欧美精选电影</span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+            <a class="nav-link" href="./index.html">首页</a>
+                    <a class="nav-link" href="./list.html">全部电影</a>
+                    <a class="nav-link" href="./categories.html">分类片库</a>
+                    <a class="nav-link" href="./rankings.html">热门排行</a>
+        </nav>
+        <form class="top-search" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索影片、地区、类型" aria-label="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="展开导航">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-panel" data-mobile-menu>
+        <nav aria-label="移动导航">
+            <a class="nav-link" href="./index.html">首页</a>
+                    <a class="nav-link" href="./list.html">全部电影</a>
+                    <a class="nav-link" href="./categories.html">分类片库</a>
+                    <a class="nav-link" href="./rankings.html">热门排行</a>
+        </nav>
+        <form class="mobile-search" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+    </div>
+</header>
+<main class="page-main">
+<section class="page-hero slim-hero">
+    <span class="eyebrow">Search</span>
+    <h1>搜索影片</h1>
+    <p>输入影片名、地区、类型、标签或年份，快速定位片库内容。</p>
+</section>
+<section class="section-wrap search-panel">
+    <form class="search-large" data-search-page-form>
+        <input type="search" name="q" placeholder="搜索影片、地区、类型、标签">
+        <button type="submit">搜索</button>
+    </form>
+    <div class="movie-grid dense-grid" data-search-results></div>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <a class="footer-logo" href="./index.html">欧美精选电影</a>
+            <p>围绕欧美精选电影建立片单栏目，覆盖热门、经典和高分方向的影片内容。</p>
+        </div>
+        <div>
+            <h3>精选入口</h3>
+            <div class="footer-links">
+                <a href="./list.html">全部电影</a>
+                <a href="./categories.html">分类片库</a>
+                <a href="./rankings.html">热门排行</a>
+                <a href="./search.html">搜索影片</a>
+            </div>
+        </div>
+        <div>
+            <h3>热门专题</h3>
+            <div class="footer-links compact-links">
+                <a href="./category-europe-us.html">欧美精选</a><a href="./category-hot-library.html">热门片库</a><a href="./category-classic-picks.html">经典优选</a><a href="./category-drama-art.html">剧情文艺</a><a href="./category-action-adventure.html">动作冒险</a><a href="./category-suspense-thriller.html">悬疑惊悚</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 欧美精选电影 · 精选电影合集与热门片库</div>
+</footer>
+<script src="./assets/search-data.js"></script>
+<script src="./assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
